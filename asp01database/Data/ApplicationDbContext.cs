@@ -13,7 +13,12 @@ namespace asp01database.Data
         protected override void OnModelCreating(ModelBuilder builder)
         {
             base.OnModelCreating(builder);
-            builder.Entity<Student>().HasData(new Student { StudentId = 1, Firstname = "Otmar", Lastname = "Drtina"});
+            builder.Entity<Classroom>().HasData(new Classroom { ClassroomId = 1, Name = "P3" });
+            builder.Entity<Student>().HasData(new Student { 
+                StudentId = 1, 
+                Firstname = "Otmar", 
+                Lastname = "Drtina", 
+                ClassroomId = 1});
         }
     }
 }

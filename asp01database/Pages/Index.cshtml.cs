@@ -2,6 +2,7 @@
 using asp01database.Models;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
+using Microsoft.EntityFrameworkCore;
 
 namespace asp01database.Pages
 {
@@ -20,7 +21,7 @@ namespace asp01database.Pages
 
         public void OnGet()
         {
-            Students = _context.Students.ToList();
+            Students = _context.Students.Include(s => s.Classroom).ToList();
         }
     }
 }
