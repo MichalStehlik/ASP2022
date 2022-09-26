@@ -49,7 +49,11 @@ namespace asp02crud.Pages
             }
 
             _context.Attach(Book).State = EntityState.Modified;
-
+            /*
+            var book = await _context.Books.FirstOrDefaultAsync(m => m.BookId == id);
+            book.Pages = 100;
+            _context.SaveChanges();
+            */
             try
             {
                 await _context.SaveChangesAsync();

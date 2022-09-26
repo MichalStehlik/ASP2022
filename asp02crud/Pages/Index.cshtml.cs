@@ -25,7 +25,7 @@ namespace asp02crud.Pages
         {
             if (_context.Books != null)
             {
-                Book = await _context.Books.ToListAsync();
+                Book = await _context.Books/*.Where(b => b.Title.StartsWith("Bab"))*/.ToListAsync();
             }
         }
     }
