@@ -1,5 +1,6 @@
 ﻿using asp03tables.Model;
 using Microsoft.EntityFrameworkCore;
+using System.Reflection.Emit;
 
 namespace asp03tables.Data
 {
@@ -16,6 +17,9 @@ namespace asp03tables.Data
         protected override void OnModelCreating(ModelBuilder builder)
         {
             base.OnModelCreating(builder);
+
+            builder.Entity<Role>().HasKey(r => new { r.MovieId, r.ActorId });
+
             builder.Entity<Genre>().HasData(new Genre
             {
                 GenreId = 1,
@@ -31,6 +35,12 @@ namespace asp03tables.Data
             {
                 ActorId = 1,
                 Name = "Sam Worthington"
+            });
+            builder.Entity<Role>().HasData(new Role
+            {
+                ActorId = 1,
+                MovieId = 1,
+                Name = "Igor"
             });
         }
     }
