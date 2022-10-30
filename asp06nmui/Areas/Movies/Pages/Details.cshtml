@@ -1,0 +1,56 @@
+﻿@page
+@model asp06nmui.Areas.Movies.Pages.DetailsModel
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h1>Details</h1>
+
+<div>
+    <h4>Movie</h4>
+    <hr />
+    <dl class="row">
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Movie.Title)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Movie.Title)
+        </dd>
+    </dl>
+    <h5>Roles</h5>
+    <dl class="row">
+        @foreach(var role in Model.Movie.Roles)
+        {
+            <dt class="col-sm-2">
+            @role.Name
+        </dt>
+        <dd class="col-sm-10">
+            <a asp-area="Artists" asp-page="Details" asp-route-id="@role.Artist.ArtistId">
+                @role.Artist.Lastname, @role.Artist.Firstname
+            </a>
+        </dd>
+        }     
+    </dl>
+    <form method="post">
+        <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="NewRole.MovieId" />
+            <div class="form-group">
+                <label asp-for="NewRole.Name" class="control-label"></label>
+                <input asp-for="NewRole.Name" class="form-control" />
+                <span asp-validation-for="NewRole.Name" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="NewRole.ArtistId" class="control-label"></label>
+                <select class="form-control" asp-for="NewRole.ArtistId" asp-items="Model.ArtistsList"></select>
+                <span asp-validation-for="NewRole.ArtistId" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Add" class="btn btn-primary" />
+            </div>
+    </form>
+</div>
+<div>
+    <a asp-page="./Edit" asp-route-id="@Model.Movie?.MovieId">Edit</a> |
+    <a asp-page="./Index">Back to List</a>
+</div>

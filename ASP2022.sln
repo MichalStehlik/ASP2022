@@ -9,9 +9,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "asp02crud", "asp02crud\asp0
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "asp03tables", "asp03tables\asp03tables.csproj", "{B0B8BB09-2FD1-4414-BC13-203D83DBB4BD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "asp04dbFirst", "asp04dbFirst\asp04dbFirst.csproj", "{6A8FB7CE-4EB5-429D-9044-2C708E8E5197}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "asp04dbFirst", "asp04dbFirst\asp04dbFirst.csproj", "{6A8FB7CE-4EB5-429D-9044-2C708E8E5197}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "asp05sqlite", "asp05sqlite\asp05sqlite.csproj", "{B48EFA6E-B7EC-4EBD-AFFE-7DFE2C609220}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "asp05sqlite", "asp05sqlite\asp05sqlite.csproj", "{B48EFA6E-B7EC-4EBD-AFFE-7DFE2C609220}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "asp06nmui", "asp06nmui\asp06nmui.csproj", "{72559C71-0B97-41D1-A817-5EA716725411}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,6 +41,10 @@ Global
 		{B48EFA6E-B7EC-4EBD-AFFE-7DFE2C609220}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B48EFA6E-B7EC-4EBD-AFFE-7DFE2C609220}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B48EFA6E-B7EC-4EBD-AFFE-7DFE2C609220}.Release|Any CPU.Build.0 = Release|Any CPU
+		{72559C71-0B97-41D1-A817-5EA716725411}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{72559C71-0B97-41D1-A817-5EA716725411}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{72559C71-0B97-41D1-A817-5EA716725411}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{72559C71-0B97-41D1-A817-5EA716725411}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
