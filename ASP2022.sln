@@ -15,7 +15,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "asp05sqlite", "asp05sqlite\
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "asp06nmui", "asp06nmui\asp06nmui.csproj", "{72559C71-0B97-41D1-A817-5EA716725411}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "asp07identity1", "asp07identity1\asp07identity1.csproj", "{CBD545A8-BE72-4052-8CEF-795E131C7D96}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "asp07identity1", "asp07identity1\asp07identity1.csproj", "{CBD545A8-BE72-4052-8CEF-795E131C7D96}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "asp08identity2", "asp08identity2\asp08identity2.csproj", "{80E70267-D483-4960-952A-C29AEADF1243}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -51,6 +53,10 @@ Global
 		{CBD545A8-BE72-4052-8CEF-795E131C7D96}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CBD545A8-BE72-4052-8CEF-795E131C7D96}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CBD545A8-BE72-4052-8CEF-795E131C7D96}.Release|Any CPU.Build.0 = Release|Any CPU
+		{80E70267-D483-4960-952A-C29AEADF1243}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{80E70267-D483-4960-952A-C29AEADF1243}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{80E70267-D483-4960-952A-C29AEADF1243}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{80E70267-D483-4960-952A-C29AEADF1243}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
